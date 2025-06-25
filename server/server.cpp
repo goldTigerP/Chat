@@ -3,16 +3,18 @@
 #include "Poco/Net/SocketStream.h"
 #include <iostream>
 #include <string>
+#include "common_define.h"
 
 using namespace Poco::Net;
 using namespace std;
+using namespace Chat::Base;
 
 int main()
 {
     try
     {
-        ServerSocket serverSocket(12345); // 监听端口 12345
-        cout << "Server is running on port 12345..." << endl;
+        ServerSocket serverSocket(SERVER_PORT); // 监听端口 12345
+        cout << "Server is running on port " << SERVER_PORT << endl;
 
         while (true)
         {

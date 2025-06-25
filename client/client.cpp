@@ -3,13 +3,17 @@
 #include "Poco/Net/SocketStream.h"
 #include <iostream>
 #include <string>
+#include "common_define.h"
 
 using namespace Poco::Net;
 using namespace std;
+using namespace Chat::Base;
 
-int main() {
-    try {
-        SocketAddress serverAddress("127.0.0.1", 12345); // 连接到本地服务器
+int main()
+{
+    try
+    {
+        SocketAddress serverAddress(SERVER_IP, SERVER_PORT); // 连接到本地服务器
         StreamSocket socket(serverAddress);
         SocketStream socketStream(socket);
 
@@ -23,7 +27,9 @@ int main() {
         string response;
         getline(socketStream, response); // 接收回显
         cout << "Server response: " << response << endl;
-    } catch (const exception& ex) {
+    }
+    catch (const exception &ex)
+    {
         cerr << "Error: " << ex.what() << endl;
     }
 
