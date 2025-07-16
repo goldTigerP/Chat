@@ -1,0 +1,26 @@
+# 使用 Google 风格作为基础
+BasedOnStyle: Google
+
+# 缩进设置
+IndentWidth: 4               # 缩进宽度为 2 个空格
+TabWidth: 4                  # Tab 的宽度
+UseTab: Never                # 使用空格代替 Tab
+
+# 换行设置
+AllowShortFunctionsOnASingleLine: Inline # 短函数允许写在一行
+BreakBeforeBraces: Attach                # 大括号与函数或类声明同一行
+ColumnLimit: 100                         # 每行最大字符数
+
+# 空格设置
+SpaceBeforeParens: ControlStatements     # 控制语句前加空格
+SpacesInParentheses: false               # 括号内不加空格
+SpacesInAngles: false                    # 模板参数的尖括号内不加空格
+
+# 对齐设置
+AlignConsecutiveAssignments: false       # 对齐连续的赋值语句
+AlignConsecutiveDeclarations: true       # 对齐连续的声明语句
+AlignTrailingComments: true              # 对齐尾部注释
+
+# 其他设置
+SortIncludes: true                       # 自动排序 include 语句
+NamespaceIndentation: None               # 命名空间内不额外缩进

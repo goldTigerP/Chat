@@ -3,13 +3,12 @@
 
 #include <string>
 
-namespace Chat::Base
-{
-    struct User
-    {
-        std::string name{};
-        std::string password{};
-    };
-}
+namespace Chat::Base {
+struct User {
+  std::string name{};
+  std::string password{};
+};
+
+} // namespace Chat::Base
 
 #endif
